@@ -21,4 +21,9 @@ void initialize()
 		assertTrue(v.testNotBlank("hello"));
 		
 	}
+	@Test
+	void testPrix()
+	{
+		assertTrue(v.validPrix(100));
+	}
 }
