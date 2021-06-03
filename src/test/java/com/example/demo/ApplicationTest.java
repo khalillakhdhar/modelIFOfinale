@@ -24,6 +24,11 @@ void initialize()
 	@Test
 	void testPrix()
 	{
-		assertTrue(v.validPrix(100));
+		assertTrue(v.validPrix(400));
+	}
+	@Test
+	void testDescription()
+	{
+		assertTrue(v.validDescription("bonjour le monde"));
 	}
 }
