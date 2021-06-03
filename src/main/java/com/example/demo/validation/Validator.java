@@ -10,4 +10,9 @@ public boolean validDescription(String description)
 {
 return description.length()>10;	
 }
+public boolean validContenuDescription(String description)
+{
+return description.trim().contains(" ");
+
+}
 }
