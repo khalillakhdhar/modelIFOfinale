@@ -23,5 +23,8 @@ public boolean testLonguer(String chaine)
 {
 return chaine.length() >5;	
 }
-
+public boolean testDuree(int duree)
+{
+return duree>2 && duree<100;	
+}
 }
