@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import com.example.demo.validation.Validator;
@@ -40,5 +41,10 @@ void initialize()
 	void testlongueur()
 	{
 		assertTrue(v.testLonguer("formation IFO"));
+	}
+	@Disabled
+	void testId()
+	{
+		assertTrue(0==0);
 	}
 }
