@@ -31,4 +31,14 @@ void initialize()
 	{
 		assertTrue(v.validDescription("bonjour le monde"));
 	}
+	@Test
+	void testMot()
+	{
+		assertTrue(v.validContenuDescription("bonjour bonjour"));
+	}
+	@Test
+	void testlongueur()
+	{
+		assertTrue(v.testLonguer("formation IFO"));
+	}
 }
