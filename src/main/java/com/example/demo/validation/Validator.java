@@ -17,7 +17,7 @@ return description.trim().contains(" ");
 }
 public boolean testNotBlank(String valeur)
 {
-return !valeur.isBlank();	
+return !valeur.isEmpty();	
 }
 public boolean testLonguer(String chaine)
 {
