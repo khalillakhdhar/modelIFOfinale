@@ -1,9 +1,23 @@
 package com.example.demo.bean;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import com.sun.istack.NotNull;
+
+@Entity
 public class Formation {
-private int id;
-private float prix;
-private String description,titre;
+
+	@Id
+	private int id;
+
+	@NotNull
+	private float prix;
+
+
+	private String description;
+@NotNull
+private String titre;
 public int getId() {
 	return id;
 }

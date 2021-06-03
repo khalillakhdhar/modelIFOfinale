@@ -1,8 +1,21 @@
 package com.example.demo.bean;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
+
+import com.sun.istack.NotNull;
+
+@Entity
 public class Session {
-	private int id,duree;
-	private String date,titre;
+	@Id
+	private int id;
+	@NotBlank
+	private int duree;
+	@NotNull
+	private String date;
+	@NotNull
+	private String titre;
 	public int getId() {
 		return id;
 	}
