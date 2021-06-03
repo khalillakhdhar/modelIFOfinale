@@ -1,16 +1,18 @@
 package com.example.demo.bean;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.validation.constraints.NotBlank;
 
 import com.sun.istack.NotNull;
 
 @Entity
 public class Session {
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	@NotBlank
+	@NotNull
 	private int duree;
 	@NotNull
 	private String date;
