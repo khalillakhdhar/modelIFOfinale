@@ -15,4 +15,13 @@ public boolean validContenuDescription(String description)
 return description.trim().contains(" ");
 
 }
+public boolean testNotBlank(String valeur)
+{
+return !valeur.isBlank();	
+}
+public boolean testLonguer(String chaine)
+{
+return chaine.length() >5;	
+}
+
 }
