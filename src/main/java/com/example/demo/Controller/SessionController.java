@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.bean.Session;
-import com.example.demo.bean.repositories.FormationRepository;
 import com.example.demo.bean.repositories.SessionRepository;
 
 @RestController
